@@ -1,0 +1,9 @@
+---
+confluent_platform_scala_version: "2.11.7"
+
+confluent_platform_install_kafka: true
+confluent_platform_install_connect_hdfs: false
+confluent_platform_install_connect_jdbc: false
+confluent_platform_install_schema_registry: true
+confluent_platform_install_kafka_rest: true
+confluent_platform_install_camus: false

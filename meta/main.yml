@@ -1,0 +1,15 @@
+# file: roles/ansible-confluent-platform/meta/main.yml
+---
+galaxy_info:
+  author: Filip Tepper
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+  categories:
+     - system
+     - kafka
+dependencies: []
+version: 0.1.0

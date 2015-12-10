@@ -1,0 +1,36 @@
+---
+- name: install confluent-kafka
+  apt:
+    name: "confluent-kafka-{{ confluent_platform_scala_version }}"
+    state: present
+  when: confluent_platform_install_kafka == true
+
+- name: install confluent-kafka-connect-hdfs
+  apt:
+    name: confluent-kafka-connect-hdfs
+    state: present
+  when: confluent_platform_install_connect_hdfs == true
+
+- name: install confluent-kafka-connect-jdbc
+  apt:
+    name: confluent-kafka-connect-jdbc
+    state: present
+  when: confluent_platform_install_connect_jdbc == true
+
+- name: install confluent-schema-registry
+  apt:
+    name: confluent-schema-registry
+    state: present
+  when: confluent_platform_install_schema_registry == true
+
+- name: install confluent-kafka-rest
+  apt:
+    name: confluent-kafka-rest
+    state: present
+  when: confluent_platform_install_kafka_rest == true
+
+- name: install confluent-camus
+  apt:
+    name: confluent-camus
+    state: present
+  when: confluent_platform_install_camus == true
