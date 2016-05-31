@@ -9,7 +9,7 @@
   apt:
     name: "confluent-platform-oss-{{ confluent_platform_scala_version }}"
     state: present
-  when: confluent_platform_install_platform+oss == true
+  when: confluent_platform_install_platform_oss == true
 
 - name: install confluent-kafka
   apt:
