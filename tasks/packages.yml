@@ -1,9 +1,27 @@
 ---
+- name: install confluent-platform
+  apt:
+    name: "confluent-platform-{{ confluent_platform_scala_version }}"
+    state: present
+  when: confluent_platform_install_platform == true
+
+- name: install confluent-platform-oss
+  apt:
+    name: "confluent-platform-oss-{{ confluent_platform_scala_version }}"
+    state: present
+  when: confluent_platform_install_platform+oss == true
+
 - name: install confluent-kafka
   apt:
     name: "confluent-kafka-{{ confluent_platform_scala_version }}"
     state: present
   when: confluent_platform_install_kafka == true
+
+- name: install confluent-control-center
+  apt:
+    name: "confluent-control-center-{{ confluent_platform_scala_version }}"
+    state: present
+  when: confluent_platform_install_control_center == true
 
 - name: install confluent-kafka-connect-hdfs
   apt:
@@ -28,3 +46,33 @@
     name: confluent-kafka-rest
     state: present
   when: confluent_platform_install_kafka_rest == true
+
+- name: install confluent-support_metrics
+  apt:
+    name: confluent-support-metrics
+    state: present
+  when: confluent_platform_install_support_metrics == true
+
+- name: install confluent-librdkafka
+  apt:
+    name: confluent-librdkafka
+    state: present
+  when: confluent_platform_install_librdkafka == true
+
+- name: install avro
+  apt:
+    name: avro
+    state: present
+  when: confluent_platform_install_avro == true
+
+- name: install confluent-libserdes
+  apt:
+    name: confluent-libserdes
+    state: present
+  when: confluent_platform_install_libserdes == true
+
+- name: install confluent-kafka-python
+  apt:
+    name: confluent-kafka-python
+    state: present
+  when: confluent_platform_install_kafka_python == true

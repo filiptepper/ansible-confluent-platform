@@ -1,9 +1,16 @@
 ---
 confluent_platform_scala_version: "2.11"
 
-confluent_platform_install_platform_oss: true
 confluent_platform_install_platform: false
+confluent_platform_install_platform_oss: false
+confluent_platform_install_kafka: false
+confluent_platform_install_control_center: false
 confluent_platform_install_connect_hdfs: false
 confluent_platform_install_connect_jdbc: false
 confluent_platform_install_schema_registry: false
 confluent_platform_install_kafka_rest: false
+confluent_platform_install_support_metrics: false
+confluent_platform_install_librdkafka: false
+confluent_platform_install_avro: false
+confluent_platform_install_libserdes: false
+confluent_platform_install_kafka_python: false
