@@ -28,9 +28,3 @@
     name: confluent-kafka-rest
     state: present
   when: confluent_platform_install_kafka_rest == true
-
-- name: install confluent-camus
-  apt:
-    name: confluent-camus
-    state: present
-  when: confluent_platform_install_camus == true
