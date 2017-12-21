@@ -1,11 +1,11 @@
 ---
 - name: add Confluent's public key
   apt_key:
-    url: http://packages.confluent.io/deb/3.0/archive.key
+    url: http://packages.confluent.io/deb/3.2/archive.key
     state: present
 
 - name: add Confluent's .deb repository
   apt_repository:
-    repo: "deb http://packages.confluent.io/deb/3.0 stable main"
+    repo: "deb http://packages.confluent.io/deb/3.2 stable main"
     state: present
     update_cache: true
