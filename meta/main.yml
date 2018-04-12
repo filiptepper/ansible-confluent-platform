@@ -9,6 +9,6 @@ galaxy_info:
       versions:
         - trusty
   categories:
-     - system
-     - kafka
+    - system
+    - kafka
 dependencies: []
