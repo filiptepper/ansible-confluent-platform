@@ -1,6 +1,8 @@
 ---
 confluent_platform_scala_version: "2.11"
 
+confluent_platform_version: "3.2"
+
 confluent_platform_install_platform: false
 confluent_platform_install_platform_oss: false
 confluent_platform_install_kafka: false
